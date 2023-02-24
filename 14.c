@@ -14,7 +14,6 @@ void main()
     scanf("%f", &pool_radius);
     pool_area = 3.14 * pool_radius * pool_radius;
 
-    float park_base, park_height, park_area;
     printf("Enter the base and height of the triangle: ");
     scanf("%f %f", &park_base, &park_height);
     park_area = 0.5 * park_base * park_height;
