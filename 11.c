@@ -20,5 +20,4 @@ void main()
     printf("Sub = %f\n", sub);
     printf("Mul = %f\n", mul);
     printf("Div = %f\n", div);
-    printf("Mod = %f\n", mod);
 }

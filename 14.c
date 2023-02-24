@@ -4,21 +4,22 @@
 
 void main()
 {
-    int plot_length, plot_width, plot_area;
+    float plot_length, plot_width, plot_area, pool_radius, pool_area, park_base, park_height, park_area, total_area;
+
     printf("Enter the length and width of the rectangular building plot: ");
-    scanf("%d %d", &plot_length, &plot_width);
+    scanf("%f %f", &plot_length, &plot_width);
     plot_area = plot_length * plot_width;
-    printf("Area = %d\n", plot_area);
 
-    float r, pool_area;
     printf("Enter the radius of the circular swimming pool: ");
-    scanf("%f", &r);
-    pool_area = 3.14 * r * r;
-    printf("Area = %f\n", pool_area);
+    scanf("%f", &pool_radius);
+    pool_area = 3.14 * pool_radius * pool_radius;
 
-    int park_base, park_height, park_area;
+    float park_base, park_height, park_area;
     printf("Enter the base and height of the triangle: ");
-    scanf("%d %d", &park_base, &park_height);
+    scanf("%f %f", &park_base, &park_height);
     park_area = 0.5 * park_base * park_height;
-    printf("Area = %d\n", park_area);
+
+    total_area = plot_area + pool_area + park_area;
+
+    printf("Total Area = %f\n", total_area);
 }
